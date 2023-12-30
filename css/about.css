@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+nav{
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+    margin-right: 5%;
+    margin-left: 5% ;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-top: 0;
+    position: fixed;
+    top: 25px;
+    width: 90%;
+    
+    
+    
+}
+
+nav  a img{
+    width: 5rem;
+}
+   
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 70px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    text-decoration: underline black;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+   
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    width: 180px;
+    z-index: 999;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-btn{
+    display: none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+section{
+    padding-top: 15rem;
+    text-align: center;
+    color: white;
+    background-image: url(../image/solar-wallpaper.jpg);
+   
+
+}
+#body-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    text-align: center;
+    padding-bottom: 7rem;
+    
+    
+}
+#body-text h1{
+    font-size: 4rem;
+
+}
+#explanation{
+    background-color: white;
+    color: black;
+    padding-top: 5rem;
+}
+#explanation h1{
+    font-size: 3rem;
+}
+.explanation-details{
+    text-align: justify;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 0px 0px 1px brown;
+    padding-top: 15px;
+}
+#mission-block{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 7rem;
+    padding-right: 2rem;
+}   
+#mission-image img{
+    border-radius: 25px;
+}
+#mission-statement h1{
+    font-size: 3rem;
+    font-style: initial
+}
+#mission h3{
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+#mission{
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    text-align: start;
+    padding-left: 5rem;
+    padding-right: 2rem;
+}
+.mission-list img{
+    width: 25px;
+
+}
+#vision-block{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+#vision{
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    text-align: start;
+    padding-left: 2rem;
+    
+}
+#vision-image img{
+    border-radius: 25px;
+    width: 40rem;
+    height: 27rem;
+    padding-left: 5rem;
+}
+#vision-statement h1{
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+#partnership{
+    background-color: white;
+    color: black;
+    padding-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 5rem;
+    width: 100%;
+    
+}
+#partnership div img{
+    width: 15rem;
+}
+#partnership h1{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+#partners-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+#questions{
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    height: 8rem;
+    
+}
+#questions-block{
+    font-size: 1.8rem;
+}
+#contact{
+    background-color: white;
+    color: black;
+    font-size: 1.25rem;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 1rem;
+}
+#contact a{
+    text-decoration: none;
+    color: black;
+}
+#contact :hover{
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+    
+}
+#main-footer{
+    background-color: white;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    font-size: 1.125rem;
+    line-height: 1.33em;
+    color: black;
+}
+#footer-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: brown;
+    background-size: cover;
+    color: white;
+    height: 5rem;
+    border-radius: 30px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    box-shadow: -1px 1px 11px brown;
+}
+#terms-conditions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#privacy{
+    border-right: 3px solid tomato;
+    padding-right: 7px;
+    
+   
+}
+#terms{
+    padding-left: 7px;
+}
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    
+}
+#column-1 a{
+    text-decoration: none;
+    color: black;
+}
+#column-2 a{
+    text-decoration: none;
+    color: black;
+}
+#column-3 a{
+    text-decoration: none;
+    color: black;
+}
+#image-section{
+    padding-bottom: 0;
+}
+#social-media img{
+    width: 45px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+#social-media{
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+#column-1 h1{
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+#column-3 h1{
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+#column-2 h1{
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+@media (max-width: 480px) {
+    
+    #mission-block{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #vision-block{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    #partners-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #partners{
+        padding-bottom: 3rem;
+    }
+   #vision-image img{
+    width: 25rem;
+    height: 15rem;
+    border-radius: 0;
+    
+   }
+   #mission-image img{
+    width: 20rem;
+    height: 16rem;
+    border-radius: 0;
+   }
+   .explanation-details{
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+   #questions-block{
+    font-size: 0.8rem;
+   }
+   #contact a{
+    font-size: 0.8rem;
+   }
+    #questions{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #contact{
+        padding: 0.5rem;
+    }
+    #vision{
+        font-size: 0.8rem;
+    }
+    .mission-list{
+        font-size: 0.8rem;
+    }
+    #footer, #social-media {
+        font-size: 0.8rem;
+    }
+    #social-media img{
+        width: 2rem;
+    }
+    
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+    margin-bottom: 2rem;
+    }
+    #column-2{
+        margin-bottom: 2rem;
+    }
+    #column-3{
+        margin-bottom: 2rem;
+    }
+    #mission-statement h1{
+        padding-top: 2rem;
+    }
+    #vision-statement h1{
+        padding-top: 2rem;
+    }
+}    

@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+#scrap-batteries{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    padding-top: 5rem;
+}
+#scrap-battery img{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid brown;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+#solarpanel-block{
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+#chargecontroller-block{
+    padding-bottom: 8rem;
+}
+
+#jinko h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+#jinko{
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+#canadian{
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+#canadian h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+#chargecontroller-image img{
+    width: 23rem;
+}
+#hybrid-inverters{
+    padding-left: 2rem;
+    padding-right: 1rem;
+    width: 50%;
+}
+#hybrid-in{
+    width: 22rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#string-inverters{
+    padding-left:  1rem;
+    padding-right: 2rem;
+    width: 50% ;                                   ;
+}
+#string-in{
+    width: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#string-inverters h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+#hybrid-inverters h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+    padding-top: 3rem;
+
+
+}
+#inverter-block{
+    padding-bottom: 8rem;
+}
+#battery-block{
+    padding-bottom: 8rem;
+}
+#ups-block{
+    padding-bottom: 8rem;
+}
+@media (max-width: 480px){
+    #footer, #social-media {
+        font-size: 0.8rem;
+    }
+    #social-media img{
+        width: 2rem;
+    }
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+    margin-bottom: 2rem;
+    }
+    #battery-text{                          
+        font-size: 0.8rem;
+        padding-right: 0;
+    }
+       #contact a{
+        font-size: 0.8rem;
+       }
+        #battery-dealers{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 0;
+            width: 100%;
+           
+        }
+        #contact{
+            padding: 0.5rem;
+        }
+        #scrap-batteries{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        #scrap-battery img{
+            width:15rem ;
+            height: 15rem;
+        }
+}

@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+body{
+    background: url(../image/homepage.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+nav{
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+    margin-right: 5%;
+    margin-left: 5% ;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-top: 0;
+    position: fixed;
+    top: 25px;
+    width: 90%;
+    
+    
+}
+
+nav  a img{
+    width: 5rem;
+}
+   
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 70px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    text-decoration: underline black;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+   
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 80vh;
+    width: 180px;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-btn{
+    display: none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+#landing-page{
+    text-align: left;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    width: 60%;
+}
+#motto{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.2em;
+    text-shadow: -1px 0px 11px #000000;
+    font-family: sans-serif, "Neue Montreal";
+    margin-bottom: 3.5rem;
+    text-align: left;
+    margin-top: 7.5rem;
+}
+#motto-2{
+    color: white;
+    font-size: 1.125rem;
+    line-height: 1.33em;
+    text-shadow: 0px 2px 14px #000000;
+    margin-bottom: 5%;
+}
+#btn{
+    background-color: brown;
+    /* opacity: 0.7; */
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    width: 10rem;
+    height: 2.5rem;
+    text-align: center;
+    
+}
+#btn-1{
+background-color: brown;
+border: 1px solid white;
+border-radius: 20px;
+padding: 10px;
+color: white;
+cursor: pointer;
+font-weight: 700;
+width: 13rem;
+height: 2.5rem;
+text-align: center;
+margin-right: 4em;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+#company-info{
+    background: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.trust{
+    font-size: 2rem;
+}
+#block-2 img{
+    
+    border-radius: 10px;
+    width: 30rem;
+}
+#mission-statement{
+    font-size: 4rem;
+    text-decoration: double black;
+    font-style: oblique;
+
+}
+#vision-statement{
+    font-size: 4rem;
+    font-style: oblique;
+}
+#vision, #mission{
+    font-size: 1rem;
+    
+}
+#solar-activation{
+    background-color: white;
+    padding-bottom: 15px;
+}
+.solar-activationheading{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 300;
+    
+}
+#steps{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1.35rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+.step{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 0.7rem;
+}
+#solar-step{
+    border: 2px solid brown;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* border-radius: 55px; */
+    box-shadow: -1px 0px 11px tomato; 
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.step-details{
+    font-size: 1rem;
+    padding-top: 0.7rem;
+}
+#solar-benefits{
+    text-align: center;
+    font-size: 3rem;
+    background: white;
+    background-image: url(../image/background.avif);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-shadow: -1px -1px 11px brown;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+    
+}
+#benefit-list{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25rem;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    font-style: oblique;
+
+}
+#benefit{
+    
+    border: 2px solid white;
+    box-shadow: -1px 1px 11px white;
+    color: white;
+    border-radius: 50px;
+    width: 20rem;
+    
+}
+#benefit img{
+    display: inline;
+    text-align: left;
+    padding-top: 2rem;
+}
+.number{
+     padding-bottom: 3rem; 
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+
+}
+.number-1{
+    padding-top: 17rem;
+    text-align: left;
+    padding-left: 2rem;
+    
+}
+#partnership{
+    background-color: white;
+    margin-top: 0;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    
+}
+
+#main-footer{
+    background-color: white;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    font-size: 1.125rem;
+    line-height: 1.33em;
+}
+#mission{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+#footer-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: brown;
+    background-size: cover;
+    color: white;
+    height: 5rem;
+    border-radius: 30px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    /* padding-top: 5rem; */
+    box-shadow: -1px 1px 11px brown;
+}
+#terms-conditions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#privacy{
+    border-right: 3px solid tomato;
+    padding-right: 7px;
+    
+   
+}
+#terms{
+    padding-left: 7px;
+}
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    
+}
+#column-1 a{
+    text-decoration: none;
+    color: black;
+}
+#quote{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    border-top: 1px solid brown;
+    box-shadow: -1px 1px 11px tomato;
+    
+}
+#quote-text{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+   
+}
+
+.author{
+    padding-top: 10px;
+}
+#partnership-1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 10rem;
+}
+#partners img{
+    width: 15rem;
+   
+    
+}
+#mission-statement h1{
+    font-size: 3rem;
+}
+#vision-statement h1{
+    font-size: 3rem;
+}
+.mission-list img{
+    width: 25px;
+}
+#image-section{
+    padding-bottom: 0;
+}
+#social-media img{
+    width: 45px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+#social-media{
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+#column-1 h1{
+    padding-bottom: 15px;
+}
+@media (max-width: 480px){
+    body{
+        background-size: auto;
+    }
+    #footer, #social-media {
+        font-size: 0.8rem;
+    }
+    #social-media img{
+        width: 2rem;
+    }
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+    margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+        margin-bottom: 2rem;
+    }
+    #partnership-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #partners{
+        padding-bottom: 3rem;
+    }
+    #steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #solar-step{
+        margin-bottom: 3rem;
+        font-size: 0.8rem;
+    }
+    #quote{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #quote-text{
+        font-size: 1rem;
+        line-height: 2.4em;
+        margin-bottom: 2rem;
+    }
+    #company-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #block-1{
+        margin-bottom: 2rem;
+    }
+
+    #image-section img{
+        width: 16rem;
+       height: 17rem;
+    }
+    #block-2 img{
+        width: 16rem;
+       height: 17rem;
+    }
+    #benefit-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #benefit{
+        padding-left: 1rem;
+        padding-right: 2rem;
+        width: 16rem;
+        font-size: 0.96rem;
+        margin-bottom: 2rem;
+        height: 24rem;
+    }
+    .number-1{
+        padding-top: 10rem;
+        margin-top: 0;
+    }
+    #solar-benefits{
+        height: auto;
+    }
+    #landing-page{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    #motto{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 2.5rem;
+    }
+    #buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        
+    }
+    #btn-1, #btn{
+        height: 3rem ;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-topic{
+        font-size: 1rem;
+    }
+}

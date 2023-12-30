@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+nav{
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+    margin-right: 5%;
+    margin-left: 5% ;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-top: 0;
+    position: fixed;
+    top: 25px;
+    width: 90%;
+    
+    
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+ 
+.logo img{
+    width: 12em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-left: 60px;
+    padding-top:5px ;
+    /* padding-bottom: ; */
+    cursor: pointer;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: transparent;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: indigo;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: indigo;
+    border-radius:  5px;
+    box-shadow: 0 0 5px brown,
+                0 0 5px brown;
+}
+nav ul ul li a:hover{
+    color: indigo;
+    box-shadow: none;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid brown;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul ul ul{
+    border-top: none;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0,.3);
+}
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+span .fa-plus{
+    margin-left: 40px;
+    font-size: 15px;
+}
+#main-footer{
+    background-color: white;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+    font-size: 1.125rem;
+    line-height: 1.33em;
+    color: black;
+}
+#footer-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: brown;
+    background-size: cover;
+    color: white;
+    height: 5rem;
+    border-radius: 30px;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    /* padding-top: 5rem; */
+    box-shadow: -1px 1px 11px brown;
+}
+#terms-conditions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#privacy{
+    border-right: 3px solid tomato;
+    padding-right: 7px;
+    
+   
+}
+#terms{
+    padding-left: 7px;
+}
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    
+}
+#column-1 a{
+    text-decoration: none;
+    color: black;
+}
+#image-section{
+    padding-bottom: 0;
+}
+#social-media img{
+    width: 45px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+#social-media{
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+#column-1 h1{
+    padding-bottom: 15px;
+    font-size: x-large;
+}
+
+section{
+    padding-top: 15rem;
+    text-align: center;
+    background-image: url(../image/greensolar.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+
+}
+#body-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 17rem;
+    text-align: center;
+    padding-bottom: 7rem;
+    
+    
+}
+#body-text h1{
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0px 0px -1px red;
+
+}
+#solarpanel-block{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+#inverter-block{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+#battery-block{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+#ups-block{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 4rem;
+}
+
+#learn-more{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 2px solid;
+    border-radius: 3px;
+    transition-property: all !important;
+   margin-top: 1rem;
+}
+#text{
+    padding-right: 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.3em 1em;
+    line-height: 1.7em !important;
+
+}
+#battery-dealers{
+    background-color: red;
+    color:white;
+    display: flex;
+    flex-direction: row  ;
+    align-items:center ;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:4rem;
+    padding-right: 4rem;
+    height: 8rem;  
+    width: 100%;  
+    
+}
+#battery-text{
+    padding-right: 2rem;
+    font-size: 1.8rem;
+}
+#contact{
+    background-color: white;
+    color: black;
+    font-size: 1.25rem;
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 1rem; 
+    width: 30%;
+}
+#contact a{
+    text-decoration: none;
+    color: black;
+}
+#contact :hover{
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+    
+}
+#chargecontroller-block{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4rem;
+    text-align: justify;
+}
+.panel-details{
+    line-height: 1.7em;
+    color: #666;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+}
+#mercury{
+    width: 50%;
+}
+#mercury h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+#jinko h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+#canadian h1{
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+#chargecontroller-image img{
+    width: 23rem;
+}
+#hybrid-inverters{
+    padding-left: 2rem;
+    padding-right: 1rem;
+    width: 50%;
+}
+#string-inverters{
+    padding-left:  1rem;
+    padding-right: 2rem;
+    width: 50% ;                                   
+}
