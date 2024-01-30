@@ -54,7 +54,6 @@ nav li:first-child{
     width: 250px;
     z-index: 999;
     background-color: white;
-
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -319,6 +318,40 @@ input[type=email] {
     }
     #e-mail, #number{
         padding-top: 3rem;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    #submit, #name, #location, #comment{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+       
+        
+    }
+    #comment{
+        display: flex;
+        justify-content: center;
+    }
+    #location{
+        width: 100%;
+    }
+    #commentss{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
   }
 
