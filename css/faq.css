@@ -291,3 +291,35 @@ section{
     }
 }
 
+
+/* tablet screen size */
+
+@media (max-width: 840px){
+    #footer, #social-media {
+        font-size: 0.8rem;
+    }
+    #social-media img{
+        width: 2rem;
+    }
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+    margin-bottom: 2rem;
+    }
+}
+

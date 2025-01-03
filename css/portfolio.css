@@ -121,6 +121,7 @@ nav li:first-child{
 }
 #portfolio-header h1{
     text-align: center;
+    font-size: ;
 }
 #row-3{
     display: flex;
@@ -235,5 +236,61 @@ nav li:first-child{
     }
     #image{
         padding-bottom: 1rem;
+    }
+    #portfolio-header h1{
+        text-align: center;
+        font-size: larger;
+    }
+}
+
+
+/* tablet screen size */
+
+@media (max-width: 840px ){
+    #footer, #social-media {
+        font-size: 0.8rem;
+    }
+    #social-media img{
+        width: 2rem;
+    }
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+    margin-bottom: 2rem;
+    }
+    #row-1, #row-3{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    #image img{
+        width: 14rem;
+        height: 17rem;
+    }
+    #image{
+        padding-bottom: 1rem;
+    }
+    #portfolio-header h1{
+        text-align: center;
+        font-size: larger;
     }
 }

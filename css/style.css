@@ -118,7 +118,6 @@ nav li:first-child{
 }
 #btn{
     background-color: brown;
-    /* opacity: 0.7; */
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px;
@@ -172,15 +171,22 @@ margin-right: 4em;
     font-size: 4rem;
     text-decoration: double black;
     font-style: oblique;
+    margin-bottom: 1.25rem;
 
 }
 #vision-statement{
     font-size: 4rem;
     font-style: oblique;
+    margin-bottom: 1.25rem;
 }
 #vision, #mission{
     font-size: 1rem;
     
+}
+
+#mission h3{
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
 }
 #solar-activation{
     background-color: white;
@@ -212,7 +218,6 @@ margin-right: 4em;
     border: 2px solid brown;
     padding-left: 15px;
     padding-right: 15px;
-    /* border-radius: 55px; */
     box-shadow: -1px 0px 11px tomato; 
     width: 15rem;
     height: 20rem;
@@ -313,7 +318,6 @@ margin-right: 4em;
     border-radius: 30px;
     margin-right: 3rem;
     margin-left: 3rem;
-    /* padding-top: 5rem; */
     box-shadow: -1px 1px 11px brown;
 }
 #terms-conditions{
@@ -432,6 +436,132 @@ margin-right: 4em;
 }
 
 @media (max-width: 480px) {
+    #footer-2{
+        font-size: 0.8rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        padding-left: 3rem;
+    
+    }
+    #column-1{
+        margin-bottom: 2rem;
+    }
+    #partnership-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #partners{
+        padding-bottom: 3rem;
+    }
+    #steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #solar-step{
+        margin-bottom: 3rem;
+        font-size: 0.8rem;
+    }
+    #quote{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #quote-text{
+        font-size: 1rem;
+        line-height: 2.4em;
+        margin-bottom: 2rem;
+    }
+    #company-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #block-1{
+        margin-bottom: 2rem;
+    }
+
+    #image-section img{
+        width: 16rem;
+       height: 17rem;
+    }
+    #block-2 img{
+        width: 16rem;
+       height: 17rem;
+    }
+    #benefit-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #benefit{
+        padding-left: 1rem;
+        padding-right: 2rem;
+        width: 16rem;
+        font-size: 0.96rem;
+        margin-bottom: 2rem;
+        height: 24rem;
+    }
+    .number-1{
+        padding-top: 10rem;
+        margin-top: 0;
+    }
+    #solar-benefits{
+        height: auto;
+    }
+    #landing-page{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    #motto{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 2.5rem;
+    }
+    #buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        
+    }
+    #btn-1, #btn{
+        height: 3rem ;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-topic{
+        font-size: 1rem;
+    }
+}
+
+/* tablet screen size */
+
+@media (max-width: 840px){
     #footer-2{
         font-size: 0.8rem;
         margin-right: 0rem;
